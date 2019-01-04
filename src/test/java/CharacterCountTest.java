@@ -32,8 +32,6 @@ public class CharacterCountTest {
         expected.put("b",false);
         expected.put("c",true);
         expected.put("d",false);
-        thrown.expect(ArrayIndexOutOfBoundsException.class);
-        thrown.expectMessage("Index: 3, Size: 3");
         assertEquals(expected,characterCount.countCharacterOccurance(string));
 
     }
@@ -43,7 +41,6 @@ public class CharacterCountTest {
         HashMap<String,Boolean> expected = new HashMap<>();
         expected.put("a",true);
         expected.put("b",false);
-        thrown.expect(ArrayIndexOutOfBoundsException.class);
         assertEquals(expected,characterCount.countCharacterOccurance(string));
 
     }

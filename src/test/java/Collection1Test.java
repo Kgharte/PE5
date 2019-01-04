@@ -29,14 +29,12 @@ public class Collection1Test {
     public void arrayListCollection1() throws Exception {
         List<String> actual = Arrays.asList("Apple","Grape","Melon","Berry");
         List<String> expected = Arrays.asList("Kiwi", "Grape", "Mango","Berry");
-        thrown.expect(ArrayIndexOutOfBoundsException.class);
         assertEquals(expected,collection1.arrayListCollection(actual));
     }
     @Test
     public void arrayListCollection2() throws Exception {
         List<String> actual = Arrays.asList("Apple","Grape","Melon","Berry");
         List<String> expected=new ArrayList<String>();
-        thrown.expect(ArrayIndexOutOfBoundsException.class);
         assertEquals(expected,collection1.emptyArrayCollection(actual));
     }
 }

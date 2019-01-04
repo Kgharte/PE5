@@ -34,7 +34,7 @@ public class MapReplaceValueTest {
         Map<String,String> map1 = new HashMap<>();
         map1.put("val1"," ");
         map1.put("val2","java");
-        thrown.expect(NullPointerException.class);
+
         assertEquals(map1,mapReplaceValue.replaceValue(map));
     }
 }

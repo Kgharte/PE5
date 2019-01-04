@@ -31,7 +31,7 @@ public class MapCountTest {
         hashMap.put("one",5);
         hashMap.put("two",2);
         hashMap.put("three",2);
-        thrown.expect(NullPointerException.class);
+
         assertEquals(hashMap,mapCount.countWordOccurance(string));
     }
     @Test
@@ -42,6 +42,7 @@ public class MapCountTest {
         hashMap.put("two",2);
         hashMap.put("three",2);
         hashMap.put("four",1);
+
         assertEquals(hashMap,mapCount.countWordOccurance(string));
     }
 

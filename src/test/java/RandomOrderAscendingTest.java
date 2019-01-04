@@ -19,7 +19,6 @@ public class RandomOrderAscendingTest {
     {
         List<String> ip=new ArrayList<String>(Arrays.asList("Harry","Olive","Alice","Bluto","Eugine"));
         TreeSet<String> op=new TreeSet<String>(Arrays.asList("Alice" ,"Bluto",  "Eugine",  "Harry", "Olive"));
-        thrown.expect(ArrayIndexOutOfBoundsException.class);
         assertEquals(op,new RandomOrderAscending().ascendingOrder(ip));
     }
 
@@ -28,7 +27,6 @@ public class RandomOrderAscendingTest {
     {
         TreeSet<String> ip=new TreeSet<String>(Arrays.asList("Alice" ,"Bluto",  "Eugine",  "Harry", "Olive"));
         List<String> op=new ArrayList<String>(Arrays.asList("Alice" ,"Bluto",  "Eugine",  "Harry", "Olive"));
-        thrown.expect(ArrayIndexOutOfBoundsException.class);
         assertEquals(op,new RandomOrderAscending().convertList(ip));
 
     }
